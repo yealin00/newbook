@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./styles/common.css" />
+    <link rel="stylesheet" href="./styles/layout.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <span class="icon menu-icon"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </span>
+        <ul>
+          <li>About</li>
+          <li>Character</li>
+          <li>Curriculum</li>
+          <li>Recruitment</li>
+          <li>Store</li>
+        </ul>
+      </nav>
+      <div class="btn-control">
+        <button type="button" class="btn btn-signin">로그인</button>
+        <button type="button" class="btn btn-signup">회원가입</button>
+      </div>
+    </header>
+    <div class="content">
+      <main class="main-content main-form">
+        <h1 class="title">회원가입</h1>
+        <div class="avatar">
+          <button class="btn btn-avatar">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M21 3V21H3V7H5V16.5858L9 12.5858L11 14.585L15 10.5858L19 14.5858V5H5H3V3H21ZM19 17.4143L15 13.415L11 17.4142L9 15.415L5.41434 19H19V17.4143ZM12 9C12 7.34315 10.6569 6 9 6C7.34315 6 6 7.34315 6 9C6 10.6569 7.34315 12 9 12C10.6569 12 12 10.6569 12 9ZM8 9C8 8.44772 8.44772 8 9 8C9.55228 8 10 8.44772 10 9C10 9.55228 9.55228 10 9 10C8.44772 10 8 9.55228 8 9Z"
+                fill="#2E6FF2"
+              />
+            </svg>
+          </button>
+        </div>
+        <form class="form">
+          <div class="form-group">
+            <label for="username">이름</label>
+            <input type="text" id="username" />
+          </div>
+          <div class="form-group">
+            <label for="email">이메일</label>
+            <input type="text" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="password">비밀번호</label>
+            <input type="password" id="password" />
+          </div>
+          <div class="form-group">
+            <label for="password-confirm">비밀번호 재확인</label>
+            <input type="password" id="password-confirm" />
+          </div>
+
+          <div class="form-group">
+            <label for="phone-number">전화번호</label>
+            <div class="form-field">
+              <input type="text" id="phone-number" />
+              <button type="button" class="btn btn-border">
+                인증번호 받기
+              </button>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="github">GitHub URL</label>
+            <input type="text" id="github" />
+          </div>
+
+          <div class="form-group">
+            <label for="birthday">생년월일</label>
+            <input type="date" id="birthday" />
+          </div>
+
+          <div class="form-group">
+            <label for="">성별</label>
+            <div class="form-field-container">
+              <div class="form-field">
+                <input type="radio" name="person" id="male" />
+                <label for="male">남성 </label>
+              </div>
+              <div class="form-field">
+                <input type="radio" name="person" id="female" />
+                <label for="female">여성 </label>
+              </div>
+              <div class="form-field">
+                <input type="radio" name="person" id="notsupport" />
+                <label for="notsupport">제공하지 않음 </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="region">지역선택</label>
+            <select id="region">
+              <option value="jeju">제주특별자치도</option>
+              <option value="seoul">서울</option>
+              <option value="daejon">대전</option>
+              <option value="daegu">대구</option>
+              <option value="busan">부산</option>
+              <option value="kwangju">광주</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="self-intro">자기소개</label>
+            <textarea
+              id="self-intro"
+              rows="10"
+              placeholder="간단히 자기소개를 써주세요."
+            ></textarea>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="login-check" />
+            <label for="login-check">이용약관 동의(필수)</label>
+            <span class="agree">약관동의</span>
+          </div>
+
+          <div class="form-group checkbox">
+            <input type="checkbox" id="private-info" />
+            <label for="private-info">개인정보 수집 및 이용 동의(필수)</label>
+            <span class="agree">약관동의</span>
+          </div>
+
+          <div class="signup-control">
+            <button type="button" class="btn btn-icon">
+              <span class="icon">
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 16 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 9L3.83 9L9.42 14.59L8 16L-6.99382e-07 8L8 6.99382e-07L9.41 1.41L3.83 7L16 7L16 9Z"
+                    fill="#5A6A72"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button type="button" class="btn btn-icon">
+              <span class="icon">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 0C13.272 0 16.177 1.57145 18.0013 4.0008L18 2H20V8H14V6L16.93 6.0005C15.5469 3.60902 12.9613 2 10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C13.6716 18 16.7655 15.5266 17.7064 12.1551L19.6328 12.6944C18.4565 16.9085 14.5893 20 10 20C4.47715 20 0 15.5228 0 10C0 4.47715 4.47715 0 10 0Z"
+                    fill="#5A6A72"
+                  />
+                </svg>
+              </span>
+            </button>
+            <button type="submit" class="btn btn-submit">회원가입</button>
+          </div>
+        </form>
+      </main>
+    </div>
+    <button class="btn btn-top-menu">
+      <span class="icon">
+        <svg
+          width="9"
+          height="6"
+          viewBox="0 0 9 6"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M0 4.5L4.5 0L9.00023 4.49997L7.50024 5.99997L4.50013 2.99987L1.5 6L0 4.5Z"
+            fill="#262B3F"
+          />
+        </svg>
+      </span>
+      TOP
+    </button>
+    <footer class="footer">
+      <div class="company">
+        <span>회사명: EST |</span> <span>대표: 라이캣 |</span>
+        <span>주소: 제주특별자치도 제주시 |</span>
+        <span>Email : abcd123@google.co.kr |</span>
+        <span>Tel : 064-000-0000 |</span>
+        <span>Fax : 064-000-0000</span>
+      </div>
+      <div class="copyright">Copyright © EST. All rights reserved</div>
+    </footer>
+  </body>
+</html>

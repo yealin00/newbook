@@ -1,0 +1,20 @@
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+}
+
+.btn {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 1em;
+  height: 1em;
+}

@@ -1,0 +1,388 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-group.checkbox {
+  align-items: center;
+  flex-direction: row;
+  gap: 5px;
+  position: relative;
+}
+
+.form-group label {
+  font-size: 0.7rem;
+  color: #788991;
+}
+.form-group input[type="text"],
+.form-group input[type="password"] {
+  background-color: #f4f5f5;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #788991;
+}
+.form-group input[type="text"]:focus,
+.form-group input[type="password"]:focus {
+  outline: none;
+}
+
+.form-field-container {
+  display: inline-flex;
+  gap: 50px;
+}
+
+.form-field {
+  display: inline-flex;
+  justify-content: space-between;
+  gap: 5px;
+}
+.form-field input[type="text"] {
+  width: 100%;
+}
+
+.btn-submit {
+  background-color: #2e6ff2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.signin-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #767676;
+  margin-top: 30px;
+  width: 100%;
+  gap: 10px;
+  text-decoration: underline;
+}
+
+.signin-control span {
+  cursor: pointer;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border: none;
+  border-radius: 50%;
+  background-color: #f4f5f5;
+  margin: 30px auto;
+  position: relative;
+}
+
+.btn-avatar {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-color: #2e6ff2;
+  border-width: 1px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.btn-avatar .image-icon {
+  width: 1em;
+  height: 1em;
+}
+
+.btn-border {
+  border: 1px solid #2e6ff2;
+  border-radius: 3px;
+  white-space: nowrap;
+  background-color: transparent;
+  color: #2e6ff2;
+}
+
+.form-group input[type="date"],
+.form-group select {
+  padding: 12px;
+  border: 1px solid #788991;
+  border-radius: 5px;
+}
+.form-group select {
+  appearance: none;
+  background: url("../images/trailing-icon.png") no-repeat right 10px center;
+}
+
+.form-group input[type="date"]:focus,
+.form-group select:focus {
+  border-color: #2e6ff2;
+  outline: none;
+}
+
+.form-group textarea {
+  padding: 12px;
+}
+.form-group textarea:focus {
+  border-color: #2e6ff2;
+  outline: none;
+}
+.form-group textarea::placeholder {
+  letter-spacing: normal;
+}
+
+.form-group .agree {
+  position: absolute;
+  right: 10px;
+  color: #5a6a72;
+  font-size: 0.7rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.signup-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.btn-icon {
+  padding: 8px;
+  border: none;
+  background-color: transparent;
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  min-width: 300px;
+  max-width: 450px;
+  position: relative;
+  margin: 15px auto;
+  width: 100%;
+}
+.search-bar .btn-icon {
+  position: absolute;
+  right: 10px;
+}
+.search-input {
+  border: 1px solid #8d8585;
+  border-radius: 25px;
+  padding: 15px;
+  width: 100%;
+}
+.search-input:focus {
+  border: 2px solid #2e6ff2;
+  outline: none;
+}
+
+.main-image {
+  width: 80%;
+  margin: 0 auto;
+}
+.main-image img {
+  max-width: 100%;
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.seperator {
+  display: none;
+}
+
+.title-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-container h3 {
+  margin: 0;
+}
+.title-container .btn-icon:hover {
+  background-color: #d8ddde;
+  border-radius: 5px;
+}
+
+.notice-info table {
+  font-size: 0.8rem;
+  color: #29363d;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.notice-info td {
+  padding: 5px;
+  /* min-width: 70px; */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.notice-info th {
+  color: #2e6ff2;
+}
+
+.new-book-cover {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+}
+.new-book-cover img {
+  max-width: 100%;
+}
+
+.title-btn-control {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.news-letter {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.news-letter-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 15px;
+}
+
+.card-avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #d8ddde;
+  border: none;
+  border-radius: 50%;
+}
+
+.card-avatar img {
+  border: none;
+  border-radius: 50%;
+}
+
+.card-header .card-title {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.card-header .card-sub-title {
+  font-size: 0.675rem;
+  color: #5a6a72;
+}
+
+.card-body {
+  padding: 0;
+}
+
+.card-body img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body .card-description {
+  padding: 15px;
+  font-size: 0.675rem;
+  color: #5a6a72;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.card-footer .read-footer-read {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-footer .read-text {
+  text-decoration: underline;
+  color: #29363d;
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.card-footer .card-footer-control {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.card-footer .card-footer-control .icon {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .summary {
+    flex-direction: row;
+  }
+
+  .notice {
+    width: 50%;
+  }
+  .new-book {
+    width: 50%;
+  }
+
+  .seperator {
+    display: block;
+    height: 100%;
+    width: 1px;
+    background-color: #d6d2d2;
+  }
+
+  .news-letter-grid {
+    grid-template-columns: repeat(2, minmax(300px, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .search-bar {
+    max-width: 650px;
+  }
+
+  .main-image {
+    width: 100%;
+  }
+
+  .summary {
+    width: 100%;
+  }
+
+  .news-letter {
+    width: 100%;
+  }
+
+  .news-letter-grid {
+    grid-template-columns: repeat(4, minmax(300px, 1fr));
+  }
+}
